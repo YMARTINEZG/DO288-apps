@@ -19,6 +19,8 @@ public class ExpenseService {
         expenses.add(new Expense("Tekton for DEVOPS", Expense.PaymentMethod.CREDIT_CARD, "13.20"));
         expenses.add(new Expense("Microservices for dummies", Expense.PaymentMethod.DEBIT_CARD, "75.00"));
         expenses.add(new Expense("Spring Boot Reactive, Second Edition", Expense.PaymentMethod.CASH, "45.00"));
+        expenses.add(new Expense("Java Reactive, Last Edition", Expense.PaymentMethod.CASH, "85.00"));
+
     }
 
     public Set<Expense> list() {
