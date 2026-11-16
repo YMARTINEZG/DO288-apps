@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = process.env.SERVER_PORT || 5000;
+const PORT = process.env.SERVER_PORT || 3000;
 const HOST = process.env.SERVER_HOST || 'local';
 app.get('/', (req,res) => {
     res.send({'message':'Hello world Nodejs'})
