@@ -12,6 +12,13 @@ app.get('/q/health', (req,res) => {
         host: HOST
     });
 })
+app.get('/q/liveness', (req,res) => {
+ res.json({
+        message: "Test liveness of application",
+        port: PORT,
+        host: HOST
+    });
+})
 app.listen(PORT, function () {
   console.log('Example app listening on port ${PORT}!');
 });
