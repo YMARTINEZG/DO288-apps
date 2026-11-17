@@ -2,6 +2,9 @@
   "name": "todo-single",
   "description": "single container version of the todoapp",
   "version": "0.0.2",
+  "engines": {
+    "node": ">=18.0.0"
+  }, 
   "private": true,
   "author": "Red Hat Training",
   "license": "ASL",
@@ -9,8 +12,8 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "restify": "4.3.0",
-    "sequelize": "3.14.2",
-    "mysql": "2.9.0"
+    "restify": "^12.1.0",
+    "sequelize": "^6.37.8",
+    "mysql": "^2.18.1"
   }
 }
