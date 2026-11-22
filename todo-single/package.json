@@ -4,7 +4,7 @@
   "version": "0.0.2",
   "engines": {
     "node": ">=18.0.0"
-  }, 
+  },
   "private": true,
   "author": "Red Hat Training",
   "license": "ASL",
@@ -12,8 +12,10 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "mysql": "^2.18.1",
+    "mysql2": "^3.24.6",
+    "path": "^0.12.7",
     "restify": "^12.1.0",
-    "sequelize": "^6.37.8",
-    "mysql": "^2.18.1"
+    "sequelize": "^6.37.8"
   }
 }
