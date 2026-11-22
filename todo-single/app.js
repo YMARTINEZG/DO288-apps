@@ -31,7 +31,7 @@ server.get('/api/status', (req, res, next) => {
 controller.context(server, '/todo/api', model); 
 
 server.get('/*', restify.plugins.serveStatic({
-    'directory': Path2D.join(__dirname,public),
+    'directory': Path.join(__dirname,'public'),
     'default': 'index.html'
 }));
 
