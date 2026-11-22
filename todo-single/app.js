@@ -19,7 +19,7 @@ server.use(restify.plugins.queryParser())
 server.use(restify.plugins.bodyParser());
 
  server.get('/hello/:name', (req, res, next) => {
-  res.send({ message: `Hello, ${req.params.name}!` });
+  res.send({ message: `Hello, ${req.params.name}! ,if you see this msg , webhook is working` });
   return next();
 });
 
