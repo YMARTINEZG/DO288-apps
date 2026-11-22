@@ -22,7 +22,7 @@ exports.list = function(req, res, next) {
     var page_no = req.query.page || 1;
     var sortField = req.query.sortFields || "id";
     var sortDirection = req.query.sortDirections || "asc";
-
+    console.log('enter to find all....');
     model.listAll(page_no, sortField, sortDirection, function(err, items) {
         if (err) {
             res.send(err);

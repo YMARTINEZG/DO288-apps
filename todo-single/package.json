@@ -14,7 +14,6 @@
   "dependencies": {
     "mysql": "^2.18.1",
     "mysql2": "^3.24.6",
-    "path": "^0.12.7",
     "restify": "^12.1.0",
     "sequelize": "^6.37.8"
   }
