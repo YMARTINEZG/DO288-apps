@@ -1,3 +1,3 @@
 <?php
-    print "This app returns a random funny quote.\n"
+    print "If you see this app returns a random funny quote. The webhook is working\n"
 ?>
