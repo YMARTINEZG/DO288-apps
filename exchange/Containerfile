@@ -1,9 +1,12 @@
-FROM registry.access.redhat.com/ubi8/nodejs-16:latest as builder
+FROM registry.access.redhat.com/ubi8/nodejs-20:latest
+USER root
+RUN chgrp -R 0 /opt/app-root/ && chmod g=u /opt/app-root/
 ADD . .
 # Avoid using "npm ci" to prevent problems with the private NPM registry in the lab environment
-RUN npm install --omit dev
+RUN npm install
 
-FROM registry.access.redhat.com/ubi8/nodejs-16:latest
-COPY --from=builder . .
+# FROM registry.access.redhat.com/ubi8/nodejs-20:latest
+# COPY --from=builder . .
+COPY index.js ./
 EXPOSE 3000
-CMD npm run -d start
+CMD ["npm", "start"]
